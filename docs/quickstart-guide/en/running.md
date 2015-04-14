@@ -10,9 +10,9 @@ navigate into the `bin` directory. Then execute `./activemq run` (or
 
              bin$ ./activemq run
 
-             11:05:06,589 INFO  [org.apache.activemq.integration.bootstrap] HQ101000: Starting ActiveMQ Server
+             11:05:06,589 INFO  [org.apache.activemq.integration.bootstrap] AMQ101000: Starting ActiveMQ Server
              ...
-             11:05:10,848 INFO  [org.apache.activemq.core.server] HQ221001: ActiveMQ Server version 2.5.0.SNAPSHOT (Wild Hornet, 125) [e32ae252-52ee-11e4-a716-7785dc3013a3]
+             11:05:10,848 INFO  [org.apache.activemq.core.server] AMQ221001: ActiveMQ Server version 2.5.0.SNAPSHOT (Wild Hornet, 125) [e32ae252-52ee-11e4-a716-7785dc3013a3]
           
 
 ActiveMQ is now running.
@@ -72,25 +72,25 @@ standalone-full.xml configuration by running the command
               14:47:42,471 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017519: Undertow HTTP listener default listening on /127.0.0.1:8080
               14:47:42,823 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-10) JBAS015012: Started FileSystemDeploymentService for directory /home/andy/projects/wildfly/build/target/wildfly-8.0.0.Beta1-SNAPSHOT/standalone/deployments
               14:47:42,882 INFO  [org.jboss.as.remoting] (MSC service thread 1-16) JBAS017100: Listening on 127.0.0.1:9999
-              14:47:43,037 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) HQ221000: live server is starting with configuration ActiveMQ Configuration (clustered=false,backup=false,sharedStore=true,journalDirectory=/home/andy/projects/wildfly/build/target/wildfly-8.0.0.Beta1-SNAPSHOT/standalone/data/messagingjournal,bindingsDirectory=/home/andy/projects/wildfly/build/target/wildfly-8.0.0.Beta1-SNAPSHOT/standalone/data/messagingbindings,largeMessagesDirectory=/home/andy/projects/wildfly/build/target/wildfly-8.0.0.Beta1-SNAPSHOT/standalone/data/messaginglargemessages,pagingDirectory=/home/andy/projects/wildfly/build/target/wildfly-8.0.0.Beta1-SNAPSHOT/standalone/data/messagingpaging)
-              14:47:43,062 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) HQ221006: Waiting to obtain live lock
-              14:47:43,103 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) HQ221012: Using AIO Journal
-              14:47:43,313 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) HQ224067: Adding protocol support CORE
+              14:47:43,037 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) AMQ221000: live server is starting with configuration ActiveMQ Configuration (clustered=false,backup=false,sharedStore=true,journalDirectory=/home/andy/projects/wildfly/build/target/wildfly-8.0.0.Beta1-SNAPSHOT/standalone/data/messagingjournal,bindingsDirectory=/home/andy/projects/wildfly/build/target/wildfly-8.0.0.Beta1-SNAPSHOT/standalone/data/messagingbindings,largeMessagesDirectory=/home/andy/projects/wildfly/build/target/wildfly-8.0.0.Beta1-SNAPSHOT/standalone/data/messaginglargemessages,pagingDirectory=/home/andy/projects/wildfly/build/target/wildfly-8.0.0.Beta1-SNAPSHOT/standalone/data/messagingpaging)
+              14:47:43,062 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) AMQ221006: Waiting to obtain live lock
+              14:47:43,103 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) AMQ221012: Using AIO Journal
+              14:47:43,313 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) AMQ224067: Adding protocol support CORE
               14:47:43,426 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.2.1.Final
-              14:47:43,448 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) HQ224067: Adding protocol support AMQP
-              14:47:43,451 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) HQ224067: Adding protocol support STOMP
-              14:47:43,453 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) HQ224067: Adding protocol support STOMP_WS
-              14:47:43,567 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) HQ221034: Waiting to obtain live lock
-              14:47:43,567 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) HQ221035: Live Server Obtained live lock
+              14:47:43,448 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) AMQ224067: Adding protocol support AMQP
+              14:47:43,451 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) AMQ224067: Adding protocol support STOMP
+              14:47:43,453 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) AMQ224067: Adding protocol support STOMP_WS
+              14:47:43,567 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) AMQ221034: Waiting to obtain live lock
+              14:47:43,567 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) AMQ221035: Live Server Obtained live lock
               14:47:43,777 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
               14:47:43,781 INFO  [org.jboss.as.jacorb] (MSC service thread 1-1) JBAS016330: CORBA ORB Service started
               14:47:44,115 INFO  [org.jboss.as.jacorb] (MSC service thread 1-13) JBAS016328: CORBA Naming Service started
               14:47:44,345 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS018210: Register web context: /activemq-server
-              14:47:44,361 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) HQ221020: Started Netty Acceptor version 3.6.6.Final-90e1eb2 127.0.0.1:5455 for CORE protocol
-              14:47:44,362 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) HQ221020: Started Netty Acceptor version 3.6.6.Final-90e1eb2 127.0.0.1:61616 for CORE protocol
-              14:47:44,364 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) HQ221020: Started Netty Acceptor version 3.6.6.Final-90e1eb2 org.apache.activemq.default.servlet:61616 for CORE protocol
-              14:47:44,366 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) HQ221007: Server is now live
-              14:47:44,366 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) HQ221001: ActiveMQ Server version 2.4.0.Beta2 (Andromedian Flyer, 123) [bcc1cd10-2bfb-11e3-ad5f-9f88840f9e1a]
+              14:47:44,361 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) AMQ221020: Started Netty Acceptor version 3.6.6.Final-90e1eb2 127.0.0.1:5455 for CORE protocol
+              14:47:44,362 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) AMQ221020: Started Netty Acceptor version 3.6.6.Final-90e1eb2 127.0.0.1:61616 for CORE protocol
+              14:47:44,364 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) AMQ221020: Started Netty Acceptor version 3.6.6.Final-90e1eb2 org.apache.activemq.default.servlet:61616 for CORE protocol
+              14:47:44,366 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) AMQ221007: Server is now live
+              14:47:44,366 INFO  [org.apache.activemq.core.server] (ServerService Thread Pool -- 58) AMQ221001: ActiveMQ Server version 2.4.0.Beta2 (Andromedian Flyer, 123) [bcc1cd10-2bfb-11e3-ad5f-9f88840f9e1a]
               14:47:44,435 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 58) JBAS011601: Bound messaging object to jndi name java:/ConnectionFactory
               14:47:44,437 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 59) JBAS011601: Bound messaging object to jndi name java:jboss/exported/jms/ServletConnectionFactory
               14:47:44,439 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 60) JBAS011601: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
